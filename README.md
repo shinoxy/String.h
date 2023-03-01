@@ -47,7 +47,7 @@
 
 - int sprintf(char *str, const char *format, ...) - sends formatted output to a string pointed to, by str.
 
-Available specifiers:
+#### Available specifiers:
 
 | 1  | c | Character
 | 2  | d | Signed decimal integer
@@ -62,7 +62,7 @@ Available specifiers:
 | 11 | n | Number of characters printed until %n occurs
 | 12 | % | Character %
 
-Flags:
+#### Flags:
 
 | 1 |    -    | Left-justify within the given field width; Right justification is the default (see width sub-specifier).
 
@@ -74,19 +74,19 @@ Flags:
 
 | 5 |    0    | Left-pads the number with zeroes (0) instead of spaces, where padding is specified (see width sub-specifier).
 
-Width:
+#### Width:
 
 | 1	| (number) | Minimum number of characters to be printed. If the value to be printed is shorter than this number, the result is padded with blank spaces. The value is not truncated even if the result is larger.
 
 | 2 |     *    | Width is not specified in the format string, but as an additional integer value argument preceding the argument that has to be formatted.
 
-Precision:
+#### Precision:
 
 | 1	| .number | For integer specifiers (d, i, o, u, x, X) − precision specifies the minimum number of digits to be written. If the value to be written is shorter than this number, the result is padded with leading zeros. The value is not truncated even if the result is longer. A precision of 0 means that no character is written for the value 0. For f specifier − this is the number of digits to be printed after the decimal point. For s − this is the maximum number of characters to be printed. By default all characters are printed until the ending null character is encountered. For c type − it has no effect. When no precision is specified for specifier f the default one is 6. When no precision is specified for all other kind of specifiers, the default is 1. If the period is specified without an explicit value for precision, 0 is assumed.
 
 | 2	|   .*    | The precision is not specified in the format string, but as an additional integer value argument preceding the argument that has to be formatted.
 
-Length:
+#### Length:
 
 | 1 | h | The argument is interpreted as a short int or unsigned short int (only applies to integer specifiers: i, d, o, u, x and X).
 
