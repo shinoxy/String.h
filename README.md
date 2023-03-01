@@ -45,7 +45,7 @@
 
 ### sprintf from stdio.h is also developed there
 
-- int sprintf(char *str, const char *format, ...) - sends formatted output to a string pointed to, by str.
+int sprintf(char *str, const char *format, ...) - sends formatted output to a string pointed to, by str.
 
 #### Available specifiers:
 
