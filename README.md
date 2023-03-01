@@ -1,7 +1,7 @@
 # String.h
 ## This project is our own version of the standard string.h library in the C language with additional string processing functions. 
 
-### In the group of 2 beginner developers, we implement 20 functions from string.h:
+## In the group of 2 beginner developers, we implement 20 functions from string.h:
 
 | 1 | void *memchr(const void *str, int c, size_t n) | Searches for the first occurrence of the character c (an unsigned char) in the first n bytes of the string pointed to, by the argument str.
 
@@ -43,11 +43,11 @@
 
 | 20 | char *strtok(char *str, const char *delim) | Breaks string str into a series of tokens separated by delim.
 
-### sprintf from stdio.h is also developed there
+## sprintf from stdio.h is also developed there
 
-int sprintf(char *str, const char *format, ...) - sends formatted output to a string pointed to, by str.
+### int sprintf(char *str, const char *format, ...) - sends formatted output to a string pointed to, by str.
 
-#### Available specifiers:
+### Available specifiers:
 
 | 1  | c | Character
 | 2  | d | Signed decimal integer
@@ -62,7 +62,7 @@ int sprintf(char *str, const char *format, ...) - sends formatted output to a st
 | 11 | n | Number of characters printed until %n occurs
 | 12 | % | Character %
 
-#### Flags:
+### Flags:
 
 | 1 |    -    | Left-justify within the given field width; Right justification is the default (see width sub-specifier).
 
@@ -74,19 +74,19 @@ int sprintf(char *str, const char *format, ...) - sends formatted output to a st
 
 | 5 |    0    | Left-pads the number with zeroes (0) instead of spaces, where padding is specified (see width sub-specifier).
 
-#### Width:
+### Width:
 
 | 1	| (number) | Minimum number of characters to be printed. If the value to be printed is shorter than this number, the result is padded with blank spaces. The value is not truncated even if the result is larger.
 
 | 2 |     *    | Width is not specified in the format string, but as an additional integer value argument preceding the argument that has to be formatted.
 
-#### Precision:
+### Precision:
 
 | 1	| .number | For integer specifiers (d, i, o, u, x, X) − precision specifies the minimum number of digits to be written. If the value to be written is shorter than this number, the result is padded with leading zeros. The value is not truncated even if the result is longer. A precision of 0 means that no character is written for the value 0. For f specifier − this is the number of digits to be printed after the decimal point. For s − this is the maximum number of characters to be printed. By default all characters are printed until the ending null character is encountered. For c type − it has no effect. When no precision is specified for specifier f the default one is 6. When no precision is specified for all other kind of specifiers, the default is 1. If the period is specified without an explicit value for precision, 0 is assumed.
 
 | 2	|   .*    | The precision is not specified in the format string, but as an additional integer value argument preceding the argument that has to be formatted.
 
-#### Length:
+### Length:
 
 | 1 | h | The argument is interpreted as a short int or unsigned short int (only applies to integer specifiers: i, d, o, u, x and X).
 
@@ -94,7 +94,7 @@ int sprintf(char *str, const char *format, ...) - sends formatted output to a st
 
 | 3 | L | The argument is interpreted as a long double (only applies to floating point specifier f).
 
-### Special string processing functions (from the String class in C#)
+## Special string processing functions (from the String class in C#)
 
 | 1 | void *to_upper(const char *str) | Returns a copy of string (str) converted to uppercase
 
@@ -104,4 +104,4 @@ int sprintf(char *str, const char *format, ...) - sends formatted output to a st
 
 | 4 | void *trim(const char *src, const char *trim_chars) | Returns a new string in which all leading and trailing occurrences of a set of specified characters (trim_chars) from the given string (src) are removed.
 
-### The library is covered with unit-tests. The total verifiable accuracy is 16 significant digits. Verifiable accuracy of the fractional part is up to 6 decimal places.
+## The library is covered with unit-tests. The total verifiable accuracy is 16 significant digits. Verifiable accuracy of the fractional part is up to 6 decimal places.
