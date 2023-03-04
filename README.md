@@ -49,18 +49,29 @@
 
 ### Available specifiers:
 
-| 1  | c | Character
-| 2  | d | Signed decimal integer
-| 3  | i | Signed decimal integer
-| 4  | f | Decimal floating point
-| 5  | o | Unsigned octal
-| 6  | s | String of characters
-| 7  | u | Unsigned decimal integer
-| 8  | x | Unsigned hexadecimal integer
-| 9  | X | Unsigned hexadecimal integer (capital letters)
-| 10 | p | Pointer address
-| 11 | n | Number of characters printed until %n occurs
-| 12 | % | Character %
+-  | c | Character 
+
+-  | d | Signed decimal integer
+
+-  | i | Signed decimal integer
+
+-  | f | Decimal floating point
+
+-  | o | Unsigned octal
+
+-  | s | String of characters
+
+-  | u | Unsigned decimal integer
+
+-  | x | Unsigned hexadecimal integer
+
+-  | X | Unsigned hexadecimal integer (capital letters)
+
+-  | p | Pointer address
+
+-  | n | Number of characters printed until %n occurs
+
+-  | % | Character %
 
 ### Flags:
 
