@@ -73,7 +73,7 @@
 ### Width:
 
 - **(number)** - Minimum number of characters to be printed. If the value to be printed is shorter than this number, the result is padded with blank spaces. The value is not truncated even if the result is larger.
-- ***** - Width is not specified in the format string, but as an additional integer value argument preceding the argument that has to be formatted.
+- ** * ** - Width is not specified in the format string, but as an additional integer value argument preceding the argument that has to be formatted.
 
 ### Precision:
 
