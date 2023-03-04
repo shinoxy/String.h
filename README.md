@@ -82,9 +82,9 @@
 
 ### Length:
 
-- | h | The argument is interpreted as a short int or unsigned short int (only applies to integer specifiers: i, d, o, u, x and X).
-- | l | The argument is interpreted as a long int or unsigned long int for integer specifiers (i, d, o, u, x and X), and as a wide character or wide character string for specifiers c and s.
-- | L | The argument is interpreted as a long double (only applies to floating point specifier f).
+- **h** - The argument is interpreted as a short int or unsigned short int (only applies to integer specifiers: i, d, o, u, x and X).
+- **l** - The argument is interpreted as a long int or unsigned long int for integer specifiers (i, d, o, u, x and X), and as a wide character or wide character string for specifiers c and s.
+- **L** - The argument is interpreted as a long double (only applies to floating point specifier f).
 
 ## Special string processing functions (from the String class in C#)
 
