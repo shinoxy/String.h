@@ -49,31 +49,31 @@
 
 ### Available specifiers:
 
--  | c | Character 
--  | d | Signed decimal integer
--  | i | Signed decimal integer
--  | f | Decimal floating point
--  | o | Unsigned octal
--  | s | String of characters
--  | u | Unsigned decimal integer
--  | x | Unsigned hexadecimal integer
--  | X | Unsigned hexadecimal integer (capital letters)
--  | p | Pointer address
--  | n | Number of characters printed until %n occurs
--  | % | Character %
+-  **c** - Character 
+-  **d** - Signed decimal integer
+-  **i** - Signed decimal integer
+-  **f** - Decimal floating point
+-  **o** - Unsigned octal
+-  **s** - String of characters
+-  **u** - Unsigned decimal integer
+-  **x** - Unsigned hexadecimal integer
+-  **X** - Unsigned hexadecimal integer (capital letters)
+-  **p** - Pointer address
+-  **n** - Number of characters printed until %n occurs
+-  **%** - Character %
 
 ### Flags:
 
-- |    -    | Left-justify within the given field width; Right justification is the default (see width sub-specifier).
-- |    +    | Forces to precede the result with a plus or minus sign (+ or -) even for positive numbers.
-- | (space) | If no sign is going to be written, a blank space is inserted before the value.
-- |    #    | Used with o, x or X specifiers the value is preceded with 0, 0x or 0X respectively for values different than zero. Used with f, it forces the written output to contain a decimal point even if no digits would follow.
-- |    0    | Left-pads the number with zeroes (0) instead of spaces, where padding is specified (see width sub-specifier).
+- **-** - Left-justify within the given field width; Right justification is the default (see width sub-specifier).
+- **+** - Forces to precede the result with a plus or minus sign (+ or -) even for positive numbers.
+- **(space)** - If no sign is going to be written, a blank space is inserted before the value.
+- **#** - Used with o, x or X specifiers the value is preceded with 0, 0x or 0X respectively for values different than zero. Used with f, it forces the written output to contain a decimal point even if no digits would follow.
+- **0** - Left-pads the number with zeroes (0) instead of spaces, where padding is specified (see width sub-specifier).
 
 ### Width:
 
-- | (number) | Minimum number of characters to be printed. If the value to be printed is shorter than this number, the result is padded with blank spaces. The value is not truncated even if the result is larger.
-- |     *    | Width is not specified in the format string, but as an additional integer value argument preceding the argument that has to be formatted.
+- **(number)** - Minimum number of characters to be printed. If the value to be printed is shorter than this number, the result is padded with blank spaces. The value is not truncated even if the result is larger.
+- ***** - Width is not specified in the format string, but as an additional integer value argument preceding the argument that has to be formatted.
 
 ### Precision:
 
